@@ -1,0 +1,10 @@
+/*HEADER*/
+header {
+    background-color: teal;
+    padding: 3px 15px;
+    box-shadow: 0 0 2.3px 1px grey;
+}
+.header__title {
+    color: white;
+    text-transform: capitalize;
+}
