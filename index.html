@@ -75,6 +75,20 @@
              </ol>
           </ul>
         </section>
+        <section>
+          <form name="goodfood" action="login.py" method="GET" target="_blank" autocomplete="on">
+            <label for="user-name"><span>Name: <small>*</span></label>
+            <input type="text" name="name" id="user-name" placeholder="Enter your name" maxlength="30" required/>
+            <label for="user-email"><span>Correo <small>*</span></label>
+            <input type="email" name="email" id="user-email" placeholder="example@gmail.com" maxlength="30" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required/>
+            <label for="day-chicken"><span>Cook</span></label>
+            <input type="date" name="day" id="day-chicken">
+            <label for="time-cook"><span>Time Cook</span></label>
+            <input type="time" name="hour" id="time-cook">
+            <label for="delivery-time"><span>Delivery Time</span></label>
+            <input type="datetime-local" id="delivery-time" name="delivery">
+          </form>
+        </section>
       </main>
       <footer>
           Made with love
