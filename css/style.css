@@ -1,3 +1,13 @@
+/*Properties Global*/
+* {
+}
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+img {
+    width: 100%;
+    height: auto;
+}
 /*HEADER*/
 header {
     background: rgb(2,0,36);
@@ -8,4 +18,46 @@ header {
 .header__title {
     color: white;
     text-transform: capitalize;
+}
+section > h1.main-section__title {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: -2px 2px 1px rgb(221, 153, 198);
+}
+ul.container-list__items {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+ul > li.list__title {
+    padding:  10px 20px;
+    align-self: center;
+}   
+ul > ol.list__items {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    padding: 10px 20px;
+    align-content: center;
+    justify-content: center;
+    font-weight: 600;
+    background-color: rgba(243, 237, 237, 0.562);
+}
+ol li {
+    background-color: rgb(219, 219, 233);
+    padding: 10px 0px;
+    width: 300px;
+    border-radius: 3px;
+}
+ol li a[href*="bbc"] {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+ol li figure {
+    margin: 0;
+    font-weight: initial;
+    font-size: 70%;
 }
