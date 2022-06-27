@@ -1,0 +1,11 @@
+/*HEADER*/
+header {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(211, 179, 212) 10%, rgb(146, 161, 177) 35%, rgb(228, 224, 224) 80%);
+    padding: 3px 15px;
+    box-shadow: 0 0 2.3px 1px grey;
+}
+.header__title {
+    color: white;
+    text-transform: capitalize;
+}
