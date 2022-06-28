@@ -4,7 +4,7 @@
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
-img {
+img, video {
     width: 100%;
     height: auto;
 }
@@ -61,4 +61,14 @@ ol.list__items li.card-item figure {
     margin: 0;
     font-weight: initial;
     font-size: 70%;
+}
+/*SECTION VIDEO */
+section.media-section-video {
+    background-color: rgb(228, 224, 224);
+    display: flex;
+    justify-content: center;
+}
+section.media-section-video video {
+    max-width: 400px;
+    padding: 10px;
 }
