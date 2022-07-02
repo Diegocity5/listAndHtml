@@ -1,10 +1,8 @@
 /*Properties Global*/
-* {
-}
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
-img {
+img, video {
     width: 100%;
     height: auto;
 }
@@ -24,7 +22,7 @@ section > h1.main-section__title {
     font-weight: bold;
     text-shadow: -2px 2px 1px rgb(221, 153, 198);
 }
-/*MAIN SECTION LIST*/
+/**MAIN SECTION LIST**/
 ul.container-list__items {
     padding: 10px;
     display: flex;
@@ -61,4 +59,14 @@ ol.list__items li.card-item figure {
     margin: 0;
     font-weight: initial;
     font-size: 70%;
+}
+/***SECTION VIDEO ***/
+section.media-section-video {
+    background-color: rgb(228, 224, 224);
+    display: flex;
+    justify-content: center;
+}
+section.media-section-video video {
+    max-width: 430px;
+    padding: 10px;
 }
