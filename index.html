@@ -8,7 +8,7 @@
       <title>Recipes of food</title><!--Titulo de la pagina-->
       <meta name="viewport" content="width=device-width, inictial-scale=1.0"><!--Muy importante en responsive desing-->
       <link rel="stylesheet" href="./css/style.css"/><!--buena practica de Vinculación de estilos-->
-      <link rel="stylesheet" href="./css/normalize.css"/><!--preformateo de estilos de los navegadores-->
+      <link rel="stylesheet" href="./css/normalize.css"/>
   </head>
   <body>
       <!--Challenge list of shooping-->
@@ -83,25 +83,31 @@
             <source src="./assets/media/food.avi#t=3,8" />
           </video>
         </section>
-          <section>
+          <section class="media-section-form">
             <form name="goodfood" action="login.py" method="GET" target="_blank" autocomplete="on">
-              <label for="user-name"><span>Name: <small>*</span></label>
-              <input type="text" name="name" id="user-name" placeholder="Enter your name" maxlength="30" required/>
-              <label for="user-email"><span>Correo <small>*</span></label>
-              <input type="email" name="email" id="user-email" placeholder="example@gmail.com" maxlength="30" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required/>
-              <label for="day-chicken"><span>Cook</span></label>
-              <input type="date" name="day" id="day-chicken">
-              <label for="time-cook"><span>Time Cook</span></label>
-              <input type="time" name="hour" id="time-cook">
-              <label for="delivery-time"><span>Delivery Time</span></label>
-              <input type="datetime-local" id="delivery-time" name="delivery">
+              <label for="user-name"><span>Name <small>*</small></span>
+                <input type="text" name="name" id="user-name" placeholder="Enter your name" maxlength="30"  required >
+              </label>
+              <label for="user-email"><span>Correo <small>*</small></span>
+                <input type="email" name="email" id="user-email" placeholder="example@gmail.com" maxlength="30" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required >
+              </label>
+              <label for="day-chicken"><span>Cook</span>
+                <input type="date" name="day" id="day-chicken">
+              </label>
+              <label for="time-cook"><span>Time Cook</span>
+                <input type="time" name="hour" id="time-cook">
+              </label>
+              <label for="delivery-time"><span>Delivery Time</span>
+                <input type="datetime-local" id="delivery-time" name="delivery">
+              </label>
                <!--drapdown list-->   
-               <label for="user-packing"><span>Packing Type</span></label>     
-               <select name="packing" id="user-packing">
-                 <option value="small">Small</option>
-                 <option value="medium">medium</option>
-                 <option value="large">large</option>
-               </select>
+               <label for="user-packing"><span>Packing Type</span>
+                <select name="packing" id="user-packing">
+                  <option value="small">Small</option>
+                  <option value="medium">medium</option>
+                  <option value="large">large</option>
+                </select>
+              </label>     
                <input list="countries" placeholder="Type a country">
                <datalist id="countries">
                  <option value="Argentina">
@@ -115,7 +121,7 @@
                  <option value="Peru">
                  <option value="Suriname">
                </datalist>
-               <input type="submit">
+               <input type="submit" class="btn-form">
             </form>
           </section>
       </main>
