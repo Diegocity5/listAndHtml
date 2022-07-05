@@ -73,8 +73,8 @@ section.media-section-video {
     justify-content: center;
 }
 section.media-section-video video {
-    max-width: 430px;
-    padding: 10px;
+    max-width: 500px;
+    padding: 20px 0;
 }
 /**** SECTION FORM ****/
 section.media-section-form {
