@@ -83,11 +83,11 @@
           </video>
         </section>
           <section class="media-section-form">
-            <form name="goodfood" action="login.py" method="GET" target="_blank" autocomplete="on">
-              <label for="user-name"><span>Name <small>*</small></span>
+            <form name="goodfood" action="login.py" method="POST" target="_blank" autocomplete="on">
+              <label for="user-name"><span class="detail-required">Name: </span>
                 <input type="text" name="name" id="user-name" placeholder="Enter your name" maxlength="30"  required >
               </label>
-              <label for="user-email"><span>Correo <small>*</small></span>
+              <label for="user-email"><span class="detail-required">Correo: </span>
                 <input type="email" name="email" id="user-email" placeholder="example@gmail.com" maxlength="30" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required >
               </label>
               <label for="day-chicken"><span>Cook</span>
