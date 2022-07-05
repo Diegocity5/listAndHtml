@@ -82,7 +82,7 @@ section.media-section-video video {
 /**** SECTION FORM ****/
 section.media-section-form {
     background-color: rgb(146, 161, 177);
-    padding: 30px 0;
+    padding: 30px 1em;
 }
 form[name="goodfood"] {
     width: 100%;
@@ -101,7 +101,7 @@ form > label {
 form label > span.detail-required::after {
     content: " * ";
     position: absolute;
-    color: red;
+    color: firebrick;
 }
 form input{
     color: gray;
