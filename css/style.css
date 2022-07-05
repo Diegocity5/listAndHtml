@@ -122,4 +122,14 @@ select[name="packing"] {
 .btn-form:focus {
     font-weight: 700;
 }
-
+/***** FOOTER *****/
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    height: 60px;
+}
+footer > p.more-details {
+    margin-left: 15px;
+}
