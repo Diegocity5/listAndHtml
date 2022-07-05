@@ -33,10 +33,10 @@ ul.container-list__items {
     justify-content: center;
     list-style: none;
     font-size: 1.6rem;
-    padding: 10px 20px;
+    padding: 10px 0px;
 }
 ul > li.list__title {
-    padding:  10px 20px;
+    padding:  0px 20px;
     align-self: center;
 }   
 li.list__title ~ ol.list__items {
@@ -52,7 +52,8 @@ li.list__title ~ ol.list__items {
 ol.list__items li.card-item {
     background-color: rgb(219, 219, 233);
     padding: 10px 0px;
-    width: 300px;
+    width: 95%;
+    max-width: 300px;
     border-radius: 3px;
 }
 ol.list__items li.card-item a[href*="bbc"] {
@@ -76,17 +77,16 @@ section.media-section-video {
 }
 section.media-section-video video {
     max-width: 500px;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 /**** SECTION FORM ****/
 section.media-section-form {
     background-color: rgb(146, 161, 177);
-    padding: 10px 0;
+    padding: 30px 0;
 }
 form[name="goodfood"] {
     width: 100%;
     max-width: 500px;
-    padding: 1em;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -135,7 +135,7 @@ footer {
     color: white;
     display: flex;
     align-items: flex-end;
-    height: 60px;
+    height: 30px;
 }
 footer > p.more-details {
     margin-left: 15px;
