@@ -39,7 +39,7 @@ ul > li.list__title {
     padding:  10px 20px;
     align-self: center;
 }   
-ul > ol.list__items {
+li.list__title ~ ol.list__items {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -64,6 +64,9 @@ ol.list__items li.card-item figure {
     margin: 0;
     font-weight: initial;
     font-size: 1rem;
+}
+img + figcaption {
+    color: black;
 }
 /***SECTION VIDEO ***/
 section.media-section-video {
@@ -100,7 +103,7 @@ form label > span.detail-required::after {
     position: absolute;
     color: red;
 }
-form  input{
+form input{
     color: gray;
     width: 100%;
     border: none;
