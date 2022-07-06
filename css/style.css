@@ -1,6 +1,7 @@
 /*Properties Global*/
 *{
     box-sizing: border-box;
+    /* outline: black solid 1px; */
 }
 html {
     font-size: 62.5%;
