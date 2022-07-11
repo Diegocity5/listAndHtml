@@ -1,6 +1,7 @@
 /*Properties Global*/
 *{
     box-sizing: border-box;
+    /* outline: black solid 1px; */
 }
 html {
     font-size: 62.5%;
@@ -9,6 +10,9 @@ html {
 img, video {
     width: 100%;
     height: auto;
+}
+a[href*="bbc"]{
+    color: rgba(100, 7, 100, 0.89);
 }
 /*HEADER*/
 header {
@@ -29,31 +33,31 @@ section > h1.main-section__title {
 }
 /**MAIN SECTION LIST**/
 ul.container-list__items {
-    padding: 10px;
     display: flex;
     justify-content: center;
     list-style: none;
     font-size: 1.6rem;
+    padding: 10px 0px;
 }
 ul > li.list__title {
-    padding:  10px 20px;
+    padding:  0px 20px;
     align-self: center;
 }   
-ul > ol.list__items {
+li.list__title ~ ol.list__items {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 40px;
-    padding: 10px 20px;
+    gap: 40px;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     font-weight: 600;
     background-color: rgba(243, 237, 237, 0.562);
 }
 ol.list__items li.card-item {
     background-color: rgb(219, 219, 233);
     padding: 10px 0px;
-    width: 300px;
+    width: 95%;
+    max-width: 300px;
     border-radius: 3px;
 }
 ol.list__items li.card-item a[href*="bbc"] {
@@ -66,6 +70,9 @@ ol.list__items li.card-item figure {
     font-weight: initial;
     font-size: 1rem;
 }
+img + figcaption {
+    color: rgba(126, 135, 138, 0.788);
+}
 /***SECTION VIDEO ***/
 section.media-section-video {
     background-color: rgb(228, 224, 224);
@@ -73,18 +80,17 @@ section.media-section-video {
     justify-content: center;
 }
 section.media-section-video video {
-    max-width: 430px;
-    padding: 10px;
+    max-width: 500px;
+    padding: 15px 0;
 }
 /**** SECTION FORM ****/
 section.media-section-form {
     background-color: rgb(146, 161, 177);
-    padding: 10px 0;
+    padding: 30px 1em;
 }
 form[name="goodfood"] {
     width: 100%;
     max-width: 500px;
-    padding: 1em;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -96,10 +102,12 @@ form > label {
     flex-wrap: wrap;
     margin-bottom: 15px;
 }
-form label small {
-    color: red;
+form label > span.detail-required::after {
+    content: " * ";
+    position: absolute;
+    color: firebrick;
 }
-form  input{
+form input{
     color: gray;
     width: 100%;
     border: none;
@@ -110,7 +118,7 @@ select[name="packing"] {
     margin-left: 10px;
 }
 .btn-form {
-    background-color: black;
+    background-color:  rgba(100, 7, 100, 0.89);
     padding: 15px 0;
     margin-top: 35px;
     cursor: pointer;
@@ -118,6 +126,9 @@ select[name="packing"] {
     border-radius: 5px;
     letter-spacing: 1px;
     color: white;
+}
+.btn-form:hover {
+    background-color: black;
 }
 .btn-form:focus {
     font-weight: 700;
@@ -128,7 +139,7 @@ footer {
     color: white;
     display: flex;
     align-items: flex-end;
-    height: 60px;
+    height: 30px;
 }
 footer > p.more-details {
     margin-left: 15px;
